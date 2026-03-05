@@ -1,0 +1,66 @@
+{
+  "projectType": "frontend",
+  "projectName": "DetectorIA Front",
+  "projectDescription": "A Next.js frontend application for detecting AI-generated content in academic texts using multiple machine learning models.",
+  "theme": "willow",
+  "primaryColor": "#84cc16",
+  "lightColor": "#fde047",
+  "darkColor": "#65a30d",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Core Features",
+        "pages": [
+          "features/file-upload",
+          "features/ai-models",
+          "features/text-extraction"
+        ]
+      },
+      {
+        "group": "Components",
+        "pages": [
+          "components/progress-bar",
+          "components/background",
+          "components/model-selector"
+        ]
+      },
+      {
+        "group": "API Integration",
+        "pages": [
+          "api/overview",
+          "api/endpoints"
+        ]
+      },
+      {
+        "group": "Development",
+        "pages": [
+          "development/setup",
+          "development/configuration",
+          "development/styling"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Upload and analyze PDF or text files for AI-generated content",
+    "Three AI model options (SVM, RoBERTa, MLP) with different speed/accuracy tradeoffs",
+    "Real-time progress indicators during analysis",
+    "Confidence scores and visual result display",
+    "PDF text extraction with normalization",
+    "Drag-and-drop file upload support",
+    "Responsive design with mobile support"
+  ],
+  "publicApiSurface": [
+    "procesarModelo(endpoint, text, timeout)",
+    "procesarModeloPDF(endpoint, file, timeout)",
+    "extractTextFromPDF(file)",
+    "normalize(text)"
+  ]
+}
